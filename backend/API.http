@@ -1,0 +1,77 @@
+POST http://localhost:5000/api/v1/user/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "karthickkannan",
+    "email": "kkedits77@gmail.com",
+    "password": "8939065699@@",
+    "repeatPassword": "8939065699@@"
+}
+
+###
+POST http://localhost:5000/api/v1/user/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "kkedits77@gmail.com",
+    "password": "8939065699@@"
+}
+###
+
+GET  http://localhost:5000/api/v1/user/current HTTP/1.1
+Content-Type: application/json
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYjg5NTcxOTMyYzZiNGM0YTRjY2Y4NyIsImlhdCI6MTYwNTk2MTY5OCwiZXhwIjoxNjA2MTM0NDk4fQ.8L6uEJQRWRgHKzrl1FxrKmjBim-4KSaaQ-hP773Cmqs
+
+###
+
+POST http://localhost:5000/api/v1/post/ HTTP/1.1
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYjg5NTcxOTMyYzZiNGM0YTRjY2Y4NyIsImlhdCI6MTYwNjAxMjIwMiwiZXhwIjoxNjA2MTg1MDAyfQ.6gYWUT-y4hzXfsYX8220fl3_DpKHoXpq601kdSIKju0
+
+{
+    "postId": "1",
+    "title": "This is my third post",
+    "username": "karthick"
+}
+
+###
+
+PUT http://localhost:5000/api/v1/post/like/WTCCupkVMHeNUno9e2C4 HTTP/1.1
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYjg5NTcxOTMyYzZiNGM0YTRjY2Y4NyIsImlhdCI6MTYwNjAxMjIwMiwiZXhwIjoxNjA2MTg1MDAyfQ.6gYWUT-y4hzXfsYX8220fl3_DpKHoXpq601kdSIKju0
+
+###
+
+PUT http://localhost:5000/api/v1/post/comment/5fb4b1cb660fc87410a3cb7d HTTP/1.1
+Content-Type: application/json
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmIzNGJkMTNjYWExOTRmOTY1MjEyNjAiLCJpYXQiOjE2MDU2NzUyMTEsImV4cCI6MTYwNTg0ODAxMX0.b9sQqs8b1ZOKQXoNaEHI7pKheo-isB7GKetBvrSJ4r0
+
+{
+    "title": "karthickkannan"
+}
+
+###
+
+DELETE  http://localhost:5000/api/v1/post/delete/5fb2838aff6cee2fb449c8f4 HTTP/1.1
+Content-Type: application/json
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFjYmQ5YjRmYWIyNDNiMWUxYWRkNzkiLCJpYXQiOjE2MDU1MzE5NDYsImV4cCI6MTYwNTcwNDc0Nn0.RWRp6QECkog4HDoUvb2ZQJyHjbyPwMREM85DaXDwDEY
+
+
+###
+GET  http://localhost:5000/api/v1/post/allPost HTTP/1.1
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYjg5NTcxOTMyYzZiNGM0YTRjY2Y4NyIsImlhdCI6MTYwNjAxMjIwMiwiZXhwIjoxNjA2MTg1MDAyfQ.6gYWUT-y4hzXfsYX8220fl3_DpKHoXpq601kdSIKju0
+
+###
+
+GET  http://localhost:5000/api/v1/post/singlePost/NhiDtan3zTP4ACr7R5TK HTTP/1.1
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYjg5NTcxOTMyYzZiNGM0YTRjY2Y4NyIsImlhdCI6MTYwNjAxMjIwMiwiZXhwIjoxNjA2MTg1MDAyfQ.6gYWUT-y4hzXfsYX8220fl3_DpKHoXpq601kdSIKju0
+
+
+###
+GET  http://localhost:5000/api/v1/post/mypost HTTP/1.1
+Content-Type: application/json
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFjYmQ5YjRmYWIyNDNiMWUxYWRkNzkiLCJpYXQiOjE2MDU1MzE5NDYsImV4cCI6MTYwNTcwNDc0Nn0.RWRp6QECkog4HDoUvb2ZQJyHjbyPwMREM85DaXDwDEY
+
+###

@@ -1,0 +1,32 @@
+.nav {
+  background-color: #2f3135;
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.nav > ul {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav > ul > * {
+  margin: 0 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

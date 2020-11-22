@@ -1,0 +1,189 @@
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 2s ease-in-out;
+  animation: popup 1s;
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  border: 1px solid #888;
+  width: 45%;
+  padding: 2rem;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -2rem;
+  padding: 1rem 0;
+  transition: all 2s ease-in-out;
+  animation: popup 1s;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-avatar > img {
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.modal-avatar {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.modal-avatar > * {
+  margin-left: 0.5rem;
+}
+
+.modal-title > h3 {
+  margin-left: 3.5rem;
+}
+
+.modal-post {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--clr-grey-8);
+}
+
+.modal-likes {
+  display: flex;
+  margin: 0.5rem 2.5rem;
+  align-items: center;
+}
+
+.modal-commentCount {
+  display: flex;
+  margin: 0.5rem 0rem;
+  align-items: center;
+}
+
+.modal-likes > * {
+  margin: 0 0.5rem;
+}
+
+.modal-actions {
+  display: flex;
+  align-items: center;
+}
+
+.modal-comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  border-bottom: 1px solid var(--clr-grey-8);
+  padding: 1rem 0;
+}
+
+.modal-comment > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.modal-comment > form > * {
+  margin: 1rem 0;
+}
+
+.modal-comment > form > input {
+  display: block;
+  margin: 2rem;
+  padding: 0.6rem 20rem 0.6rem 0.5rem;
+  color: var(--clr-grey-1);
+  font-size: 14px;
+}
+
+.modal-comment > form > button {
+  margin: 0.3rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  padding: 1rem;
+  background-color: var(--clr-black);
+  color: white;
+  letter-spacing: var(--spacing);
+  border: none;
+}
+
+.modal-commentAvatar {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.modal-commentAvatar > img {
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.modal-commentAvatar > * {
+  margin-left: 0.5rem;
+}
+
+.modal-commentAll > h3 {
+  margin-left: 3.5rem;
+}
+
+.modal-commentLikes {
+  display: flex;
+  margin: 0.5rem 2.5rem;
+  align-items: center;
+}
+
+.modal-commentPost {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--clr-grey-8);
+}

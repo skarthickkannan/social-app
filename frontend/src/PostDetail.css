@@ -1,0 +1,23 @@
+.post-detail {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.detail {
+  margin-top: 2rem;
+  flex: 0.6;
+  height: 100%;
+  background-color: white;
+  border: 1px solid var(--clr-grey-9);
+  padding: 1rem;
+}
+
+.profile {
+  margin-top: 2rem;
+  flex: 0.3;
+  height: 60vh;
+  background-color: transparent;
+  background-color: white;
+  border: 1px solid var(--clr-grey-9);
+}
